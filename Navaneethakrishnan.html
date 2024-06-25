@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<!---Naveen-basicfunnypage-->
+<html>
+    <head>
+        <title>Navaneet-Profile-portfolio</title>
+        <link rel="shortcut icon" href="./imagesDP/title.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width" initial-scale="1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Trirong&display=swap');
+            *{
+                box-sizing: border-box;
+                font-family:   Trirong;
+            }
+            img{
+                max-width: 100%;
+                border-radius: 10px
+            }
+            body{
+                margin: 0px;
+                background-position: center;
+                background-size: contain;
+                background-color: rgba(255, 255, 255, 0.9);
+                font-weight: normal;
+            }
+            .row1, .row2,body,.row4 h2,button{
+                color: rgb(0, 0, 0);
+            }
+            .row2{
+                background-color: hsl(230.58deg 92.28% 74.03% / 36%);
+            }
+            .row1{
+                padding: 10px 60px;
+                background-image: url("./imagesDP/spark_article.jpg");
+                background-size: 43%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            .col1, .col2{
+                width: 50%;
+                float: left;
+                padding: 10px;
+                min-height: 200px;
+            }
+            .col2{
+                text-align: right;
+            }
+            .logo{
+                width: 250px;
+                border-radius: 100px 0px 100px 0px;
+            }
+            h1,h2,h3,p{
+                margin: 0px;
+                padding: 10px;
+            }
+            button{
+                border-radius: 5px;
+                border: 2px outset rgb(255, 174, 0);
+                margin: 10px;
+            }
+            .col2 button{
+                border-radius: 5px;
+                margin: 10px 10px 0px 0px;
+            }
+            button:hover, .menu:hover{
+                border-radius: 5px;
+                background-color: rgb(255, 210, 10);
+            }
+            button:hover{
+                border-radius: 5px;
+                border: 2px inset rgb(255, 174, 0);
+            }
+            .clear{
+                clear: both;
+            }
+            .menu{
+                border-radius: 10px;
+            }
+            .menu:hover{
+                border-radius: 5px;
+                border: none;
+                box-shadow: 2px 3px 5px hsl(0, 0%, 50%);
+                cursor: pointer;
+            }
+            .row2,.row5{
+                text-align: center;
+            }
+            ul{
+                margin: 0px;
+                padding: 10px;
+            }
+            .menu{
+                padding: 5px;
+                list-style: none;
+                display: inline-block;
+                border: 2px outset rgb(255, 174, 0);
+            }
+            .box{
+                padding-top: 50px;
+                width: 80%;
+                margin: auto;
+            }
+            .row3 h2{
+                padding-top: 35px;
+            }
+            .row3{
+                background-image: url("./imagesDP/datamining.jpg");
+                background-size: 50%;
+                
+            }
+            .sub{
+                width: 33.333333%;
+                float: left;
+                padding: 10px;
+                min-height: 360px;
+                background-color: hsla(0, 1%, 62%, 0.36);
+                border-radius: 10px;
+            }
+            .sub:hover{
+                border: 1px ridge rgb(255, 174, 0);
+            }
+            .row4 h2{
+                text-align: center;
+                padding: 2px;
+            }
+            .tab1,.tab2{
+                background-color: rgb(221 221 221 / 90%);
+                width: 49%;
+                float: left;
+                padding: 10px;
+                min-height: 250px;
+                border-radius: 15px;
+            }
+            .tab2{
+                float:right;
+            }
+            .row4 h3,.row3 h2{
+                margin: 0px;
+                padding-bottom: 20px;
+                text-align: center;
+            }
+            .list{
+                list-style: square;
+                padding: 2px 0px;
+            }
+            .tab1 ul, .tab2 ul{
+                padding: 0px 10px 10px 25px;
+                font-size: 1.1em;
+            }
+            .error{
+                background-color: rgb(221 221 221 / 90%);
+            }
+            .row4,.row3,button:hover, .menu:hover{
+                border-radius: 5px;
+                color: black;
+            } 
+            .row4,.row3{
+                padding-bottom: 80px;
+            }
+            .row5{
+                font-size: 12px;
+                background-color: rgb(40 63 75);
+                color: rgb(255, 210, 10);
+                padding: 15px 0px 20px 0px;
+            }
+            .row4{
+                    background-image: url("./imagesDP/analytics.jpg");
+                    background-size: contain;
+                    background-position: center;
+                }
+            @media only screen and (max-width:768px){
+                .logo{
+                    width: 200px;
+                }
+                h1,h2,h3,p{
+                    margin: 0px;
+                    padding: 5px;
+                }
+                .row1{
+                    padding: 10px 40px;
+                }
+                .col1{
+                    width: 40%;
+                    padding-left: 5px;
+                }
+                .col2{
+                    width: 60%;
+                }
+                .sub{
+                    width: 50%;
+                    min-height: 250px;
+                }
+                .sub h3,p{
+                    margin: 0%;
+                    padding: 5px;
+                }
+                .row3,.row4{
+                    padding-bottom: 60px;
+                }
+                .row4 h2{
+                    padding: 15px;
+                }
+                .tab1,.tab2{
+                    min-height: 265px;
+                }
+                .tab1 ul, .tab2 ul{
+                    font-size: 1em;
+                }
+                .row5{
+                    padding: 15px 0px;
+                }
+            }
+            @media only screen and (max-width:576px){
+                .col1,.col2{
+                    text-align: center;
+                    padding: 0px;
+                }
+                .col1{
+                    min-height: 150px;
+                }
+                .logo{
+                    width: 180px;
+                }
+                .col2 button{
+                border-radius: 5px;
+                margin: 10px 0px 0px 0px;
+                }
+                .col2{
+                    min-height: 180px;
+                }
+                .menu{
+                    font-size: 12px;
+                }
+                h1{
+                    font-size: 30px;
+                }
+                .row3 h2{
+                    padding: 10px;
+                }
+                .row3{
+                background-size:contain;
+                padding-top: 30px;
+                }
+                .col1,.col2, .tab1, .tab2{
+                    width: 100%;
+                }
+                .tab1,.tab2{
+                    min-height: 200px;
+                }
+                .row3,.row4{
+                    padding-bottom: 40px;
+                }
+                .gallery{
+                    background-color: hsl(47deg 97% 48% / 36%);
+                }
+                .row5{
+                    font-size: 8px;
+                }
+                .sub{
+                    width:100%;
+                    min-height:200px;
+                    text-align:center;
+                }
+            }    
+        </style>
+    </head>
+    <body>
+            <div class="row1">
+                <div class="col1">
+                    <img src="./imagesDP/img4.jpg" alt="display pic" class="logo">
+                </div>
+                <div class="col2">
+                    <h1>Navaneetha Krishnan</h1>
+                    <h2>Bigdata Engineer<br>
+                        Chennai, Tamilnadu<br>
+                        Spark Developer 
+                    </h2>
+                    <button name="butEmail"><a href="mailto:naveensrini89@gmail.com">e-mail</a></button>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="row2">
+                <ul>
+                    <li class="menu">Projects</li>
+                    <li class="menu">Experience</li> 
+                    <li class="menu"><a href="callto:9600730899">Contact</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="row3">
+                <div class="box">
+                    <div class="gallery">
+                        <h2>Gallery</h2>
+                    </div>
+                    <div class="sub">
+                        <img src="./imagesDP/AWSengineer.png" alt="bigdata">
+                        <h3>AWS Cloud Project</h3>
+                        <p>Spark Developer</p>
+                        <p>Assignment -1 DUFOUR is a global chocolate manufacturer that delivers innovative, our project needs to design a central repository for the company containing all the data gathered from searches to purchases made by site visitors. The site needs to manage inventory (supply based on demand), logistics, price (with maximum profitability) and advertisements based on searches made and things purchased by creating such a data warehouse. Recommendations based on billing, invoice, delivery date and other shared interests can also be made.   
+                        </p>
+                    </div>
+                    <div class="sub">
+                        <img src="./imagesDP/archi.JPG" alt="bigdata">
+                        <h3>ETL Process</h3>
+                        <p>Spark Developer</p>
+                        <p>Assignment -1 continue to delivers innovative, our project needs to design a central repository for the company containing all the data gathered from searches to purchases made by site visitors. The site needs to manage inventory (supply based on demand), logistics, price (with maximum profitability) and advertisements based on searches made and things purchased by creating such a data warehouse. Recommendations based on billing, invoice, delivery date and other shared interests can also be made.   
+                        </p>
+                    </div>
+                    <div class="sub">
+                        <img src="./imagesDP/spring.JPG" alt="bigdata">
+                        <h3>SpringBoot Application</h3>
+                        <p>Java Developer</p>
+                        <p>Dover 5.3 is the name of the programme, and my task as a developer was to create it. It facilitates the development of closer relationships with their clients. A number of modules, such as the core: contacts, billing, leads, email services, etc., made up this complex programme. It served as an all-encompassing marketing tool for my client.</p>
+                    </div>
+                    
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="row4">
+                <div class="error">
+                    <h2>About Me</h2>
+                    <p> Having 5 years of experience in designing, developing and maintaining large business applications such as data migration, integration, conversion and Geo-Mapping . 
+                        Having around 3 years of experience in designing and developing Big Data applications using the Hadoop Ecosystem technologies (HDFS, Hive, NIFI, Sqoop, Apache Spark and AWS).Domain experience includes Insurance, Retail. 
+                        Real time experience in Hadoop/Big Data related technology experience in Storage, Querying, Processing and analysis of data. </p>
+                </div>
+                <div class="box">
+                    <div class="tab1">
+                        <h3>Education and working Info</h3>
+                        <ul>
+                            <li class="list">DSM SOFT Pvt. Ltd (Data Engineer)</li>
+                            <li class="list">Bigwigs Technologies Pvt. Ltd (Java Developer)</li>
+                            <li class="list">B.tech EEE Dr.MGR University</li>
+                            <li class="list">PLC - Robotics </li>
+                            <li class="list">Circuit Designer</li>
+                        </ul>
+                    </div>
+                    <div class="tab2">
+                        <h3>Skills and Tools Info</h3>
+                        <ul>
+                            <li class="list">Hadoop, Sqoop, Hive, Apache Spark-Scala,Cloudera</li>
+                            <li class="list">AWS, EMR, Databricks,DBT,lambda,snowflake</li>
+                            <li class="list">MySQL, Oracle, RDS</li>
+                            <li class="list">Scala, Java, Python</li>
+                            <li class="list">Eclipse, IntelliJ, STS, GIT, JIRA, SVN</li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="row5">
+                <p> &copy; Copyright. This's <a href="mailto:naveensrini89@gmail.com" style="color: white;">naveensrini89@gmail.com</a> portfolio.</p>
+            </div>
+    </body>
+</html>
